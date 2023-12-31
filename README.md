@@ -9,7 +9,7 @@ MesterMC Bányaközpont hasonmás
 - Plusz funkciókat hozzáadtam, ami az erdetiben nincs benne: bányaközpont profilkép, korona/ft küldés, etc.
 - Dinamikus rang vásárlás, lekérdezés, dinamikus extrák változtatása (beköszönő, névelő).
 - Mindent amit tudsz változtatni eltárolja az adatbázisban.
-- 
+- Reszponzív valamennyire, lehetnek benne hibák.
 - Nem fogok másnak dolgozni azért hogy ez az oldal működjön, hozzá adni funkciókat sem, csak ha én akarom azt, nem vállalok pénzért semmit sem, nem hogy még ingyen, ne is keress meg ezzel.
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/6df63d1c-a517-4edd-887b-b4c32725e2ae)
