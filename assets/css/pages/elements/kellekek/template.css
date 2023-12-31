@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root {
+    --success-color: #0a590d;
+    --success-background-color: #cdfacf;
+
+    --error-color: #a94442;
+    --error-background-color: #f7bcbc;
+    --error-hover-color: #7c3332;
+
+    --main-color: orange;
+    --hover-main-color: rgb(192, 132, 22);
+
+    --register-color: rgb(7, 130, 5);
+    --register-hover-color: rgb(4, 108, 2);
+
+    --black-background-color: rgba(0, 0, 0, 0.7);
+    --black-footer-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../../media/bg.jpg");
+    flex-direction: column !important;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 460px;
+    background-color: var(--black-background-color);
+    border-radius: 8px;
+}
+
+.container form img {
+    width: 210px;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.container form img:hover {
+    --webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+.container form h2,
+.container form p {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.container form p:not(.error, .success) {
+    font-size: 17px !important;
+    margin-block: 5px !important;
+}
+
+.vissza,
+.dlt-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-inline: 32px;
+    padding-block: 5px;
+    background-color: var(--error-color);
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 17px;
+    border: 0;
+    outline: 0;
+}
+
+.dlt-button {
+    padding-inline: 13px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+}
+
+.vissza:hover,
+.dlt-button:hover {
+    background-color: var(--error-hover-color) !important;
+}
+
+.container form input[type="file"] {
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+.container form button[type="submit"]:not(.dlt-button) {
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-inline: 12px;
+    padding-inline: 12px;
+}
+
+.container form button[type="submit"]:hover {
+    background-color: var(--hover-main-color);
+}
+
+.error,
+.success {
+    padding-block: 5px !important;
+    padding-inline: 12px !important;
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+    border-radius: 7px !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+}
+
+.error {
+    color: var(--error-color) !important;
+    background-color: var(--error-background-color) !important;
+}
+
+.success {
+    color: var(--success-color) !important;
+    background-color: var(--success-background-color) !important;
+}
+
+.container form .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+}
+
+@media (max-width: 450px) {
+    .container form {
+        width: 359px !important;
+    }
+}

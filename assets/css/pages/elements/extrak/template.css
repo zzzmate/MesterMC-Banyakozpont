@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root {
+    --success-color: #0a590d;
+    --success-background-color: #cdfacf;
+
+    --error-color: #a94442;
+    --error-background-color: #f7bcbc;
+    --error-hover-color: #7c3332;
+
+    --main-color: orange;
+    --hover-main-color: rgb(192, 132, 22);
+
+    --register-color: rgb(7, 130, 5);
+    --register-hover-color: rgb(4, 108, 2);
+
+    --black-background-color: rgba(0, 0, 0, 0.7);
+    --black-footer-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../../media/bg.jpg");
+    flex-direction: column !important;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 330px;
+    background-color: var(--black-background-color);
+    border-radius: 8px;
+}
+
+.container form img {
+    width: 210px;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+.container form img:hover {
+    --webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+
+.container form h2,
+.container form p {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.container form p:not(.error, .success) {
+    font-size: 17px !important;
+    margin-block: 5px !important;
+}
+
+.vissza,
+.dlt-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-inline: 32px;
+    padding-block: 5px;
+    background-color: var(--error-color);
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 17px;
+    border: 0;
+    outline: 0;
+}
+
+.dlt-button {
+    padding-inline: 13px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+}
+
+.vissza:hover,
+.dlt-button:hover {
+    background-color: var(--error-hover-color) !important;
+}
+
+.container form input[type="file"] {
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+}
+
+.container form button[type="submit"]:not(.dlt-button) {
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-inline: 12px;
+    padding-inline: 16px;
+}
+
+.container form button[type="submit"]:hover {
+    background-color: var(--hover-main-color);
+}
+
+.error,
+.success {
+    padding-block: 5px !important;
+    padding-inline: 12px !important;
+    border-radius: 7px !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+}
+
+.error {
+    color: var(--error-color) !important;
+    background-color: var(--error-background-color) !important;
+}
+
+.success {
+    color: var(--success-color) !important;
+    background-color: var(--success-background-color) !important;
+}
+
+.container form .buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+}
+
+@media (max-width: 450px) {
+    .container form,
+    .current-currency {
+        width: 359px !important;
+    }
+}
+
+.container .currency h2{
+    text-align: center;
+    background-color: var(--black-background-color);
+    color: white;
+    font-size: 19px;
+    padding-block: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.container .current-currency {
+    margin-bottom: 25px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--black-background-color);
+    padding-block: 16px;
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.container .current-currency p {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    padding-inline: 12px;
+    padding-block: 6px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.container .current-currency p:hover {
+    background-color: var(--hover-main-color);
+}
+
+.container form p {
+    text-align: center;
+}
+
+/* ÜDVÖZLŐ CUCCOK */
+
+.container .activated form {
+    height: 440px !important;
+}
+
+.container .activated form input {
+    width: 60%;
+    margin-block: 5px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+    padding-block: 3px;
+    padding-inline: 3px;
+    border-left: 2px solid var(--main-color);
+}
+
+.container .activated form input::placeholder {
+    color: black;
+}
+
+.container .activated .activated-infos {
+    background-color: var(--black-background-color);
+    color: white;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.szerencse-kerek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black-background-color);
+    height: 300px;
+    width: 350px;
+    flex-direction: column;
+}
+
+.szerencse-kerek p {
+    margin-inline: 12px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}

@@ -1,0 +1,1 @@
+http://localhost/banyakozpont/pages/etc/elfelejtett_email.php?key=5c656d51a5ebca375b1f381052956387daff8e0e326c3ff72361fb786e200e31&newEmail=ggg@asd.com

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root {
+    --success-color: #0a590d;
+    --success-background-color: #cdfacf;
+
+    --error-color: #a94442;
+    --error-background-color: #f7bcbc;
+    --error-hover-color: #7c3332;
+
+    --main-color: orange;
+    --hover-main-color: rgb(192, 132, 22);
+
+    --register-color: rgb(7, 130, 5);
+    --register-hover-color: rgb(4, 108, 2);
+
+    --black-background-color: rgba(0, 0, 0, 0.7);
+    --black-footer-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../media/bg.jpg");
+}
+
+.container-items {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bejelentkezes form {
+    background-color: var(--black-background-color);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    align-items: center;
+}
+
+.bejelentkezes h2 {
+    margin-block: 35px;
+    color: white;
+}
+
+.bejelentkezes form input {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0px;
+    outline: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.bejelentkezes form input::placeholder {
+    color: black;
+}
+
+.username-class {
+    margin-bottom: 25px;
+}
+
+.username-class,
+.password-class,
+.email-class {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    border-left: 2px solid var(--main-color);
+}
+
+.bejelentkezes form i:not(.buttons i):not(.register-button .register i):not(.password-get button i) {
+    color: var(--black-background-color);
+    font-size: 22px;
+    width: 40px;
+}
+
+.container .kepek {
+    width: 700px;
+    height: 320px;
+    background-color: var(--black-background-color);
+}
+
+.bejelentkezes button[type="submit"] {
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    padding-inline: 11px;
+    padding-block: 5px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.bejelentkezes button[type="submit"]:hover {
+    background-color: var(--hover-main-color);
+}
+
+.bejelentkezes form .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.bejelentkezes form .buttons .forgot-password {
+    margin-right: 15px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    background-color: var(--error-color);
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bejelentkezes form .buttons .forgot-password:hover {
+    background-color: var(--error-hover-color);
+}
+
+.bejelentkezes form hr {
+    margin-top: 25px;
+    width: 80%;
+}
+
+.bejelentkezes form .buttons i {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.register-button p {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.register-button .register {
+    padding-inline: 32px;
+    padding-block: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: var(--register-color);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.register-button .register:hover {
+    background-color: var(--register-hover-color);
+}
+
+.container .kepek .sor-1,
+.container .kepek .sor-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container .kepek .sor-1 div,
+.container .kepek .sor-2 div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container .kepek .sor-1 div img {
+    height: auto;
+    width: 110px;
+    border-radius: 8px;
+    transition: all 0.4s;
+    cursor: pointer;    
+}
+
+.container .kepek .sor-1 div a {
+    height: auto;
+    width: 110px;
+    margin-inline: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container .kepek .sor-2 div img {
+    height: auto;
+    width: 110px;
+    border-radius: 8px;
+    transition: all 0.4s;
+    cursor: pointer;    
+}
+
+.container .kepek .sor-2 div a {
+    height: auto;
+    width: 110px;
+    margin-inline: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container .kepek .sor-1 div img:hover,
+.container .kepek .sor-2 div img:hover {
+    --webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.container .kepek .sor-1 .img-items,
+.container .kepek .sor-2 .img-items {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.container .kepek .sor-1 .img-items p,
+.container .kepek .sor-2 .img-items p  {
+    font-weight: bold;
+}
+
+.register-button .register i {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.footer-container-mobile {
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+
+    .container-items .footer-container-pc {
+        display: none !important;
+    }
+
+    .container-items {
+        height: 170vh;
+    }
+
+    .container .kepek {
+        margin-top: 15px;
+        width: 280px;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .kepek .sor-1,
+    .container .kepek .sor-2 {
+        flex-direction: column;
+    }
+
+    .container .footer-container-mobile{
+        height: 100px !important;
+        overflow: hidden;
+        display: flex;
+        background-color: var(--black-footer-color);
+        align-items: center;
+    }
+
+    .container .footer-container-mobile .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container .footer-container-mobile .links .column-1,
+    .container .footer-container-mobile .links .column-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .container .footer-container-mobile .links a {
+        margin-block: 2px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container .bejelentkezes form {
+        width: 365px;
+    }
+
+    .container-items {
+        height: 200vh;
+    }
+
+    .container .footer-container-mobile .links h2 {
+        font-size: 15px !important;
+        margin-left: 5px;
+        width: 30% !important;
+    }
+
+}
+
+.error,
+.success {
+    padding-block: 5px;
+    padding-inline: 12px;
+    margin-top: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.error {
+    color: var(--error-color) !important;
+    background-color: var(--error-background-color) !important;
+}
+
+.success {
+    color: var(--success-color) !important;
+    background-color: var(--success-background-color) !important;
+}
+
+
+.bejelentkezes form .welcome-text {
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+
+}
+
+.container-items .footer-container {
+    background-color: var(--black-footer-color);
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    height: 4vh;
+    border-radius: 4px;
+}
+
+.container .footer-container .links h2 {
+    color: white;
+    font-size: 15px;
+    margin-right: 40px;
+}
+
+.container .footer-container .links a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-inline: 15px;
+}
+
+.container-items .password-get button {
+    padding-inline: 25px !important;
+    margin-top: 25px;
+}
+
+.container-items .email-info {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0px 15px 0px;
+}
+
+.container-items .password-get i {
+    margin-top: 2px !important;
+    font-size: 16px !important;
+    margin-left: 5px;
+}
+
+.container-items .back-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-inline: 32px;
+    padding-block: 5px;
+    background-color: var(--error-color);
+    cursor: pointer;
+}
+
+.container-items .back-button:hover {
+    background-color: var(--error-hover-color);
+}

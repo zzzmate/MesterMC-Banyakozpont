@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+:root {
+    --success-color: #0a590d;
+    --success-background-color: #cdfacf;
+
+    --error-color: #a94442;
+    --error-background-color: #f7bcbc;
+    --error-hover-color: #7c3332;
+
+    --main-color: orange;
+    --hover-main-color: rgb(192, 132, 22);
+
+    --register-color: rgb(7, 130, 5);
+    --register-hover-color: rgb(4, 108, 2);
+
+    --black-background-color: rgba(0, 0, 0, 0.7);
+    --black-footer-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../../media/bg.jpg");
+}
+
+.elfelejtett-jelszo {
+    background-color: var(--black-background-color);
+    width: 400px;
+    height: 420px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.elfelejtett-jelszo form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 320px;
+    align-items: center;
+}
+
+.elfelejtett-jelszo h2 {
+    margin-block: 15px;
+}
+
+.vissza {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-inline: 32px;
+    padding-block: 5px;
+    background-color: var(--error-color);
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.vissza:hover {
+    background-color: var(--error-hover-color);
+}
+
+span {
+    color: var(--main-color);
+}
+
+.elfelejtett-jelszo input {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+    font-size: 16px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.password-class,
+.password-again-class {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    margin-block: 15px;
+    border-left: 2px solid var(--main-color);
+}
+
+.password-class i,
+.password-again-class i {
+    color: var(--black-background-color);
+    padding-inline: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.elfelejtett-jelszo button[type="submit"] {
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    padding-inline: 11px;
+    padding-block: 5px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+@media (max-width: 400px)
+{
+    .elfelejtett-jelszo,
+    .elfelejtett-jelszo form {
+        width: 350px;
+    }
+}
+
+.elfelejtett-jelszo p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.elfelejtett-jelszo button[type="submit"]:hover {
+    background-color: var(--hover-main-color);
+}
+
+.other-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error,
+.success {
+    padding-block: 5px;
+    padding-inline: 12px;
+    margin-top: 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    width: 20%;
+}
+
+.error {
+    color: var(--error-color) !important;
+    background-color: var(--error-background-color) !important;
+}
+
+.success {
+    color: var(--success-color) !important;
+    background-color: var(--success-background-color) !important;
+}
+
+.rank-informations {
+    background-color: var(--black-background-color);
+    width: 1200px;
+    height: 520px;
+    border-radius: 4px;
+}
+.rank-informations h2,
+.rank-informations p:not(.payment-info) {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-block: 15px;
+}
+
+.payment-info {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.rank-informations form {
+    text-align: center;
+    height: 80%;
+    width: 100%;
+}
+
+.rank-informations form .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1200px;
+    height: 100%;
+}
+
+.rank-informations form .row .column-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.rank-informations form .row .column-1,
+.rank-informations form .row .column-2,
+.rank-informations form .row .column-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start !important;
+    height: 80%;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+.rank-informations form .row .column-1,
+.rank-informations form .row .column-3 {
+    margin-inline: 15px !important;
+}
+
+.rank-informations form .row .column-2 .payment-choose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rank-informations form .row .column-2 .payment-choose button {
+    margin-inline: 22px;
+}
+
+.rank-informations form .row .column-2 button {
+    color: white;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    padding-inline: 11px;
+    padding-block: 5px;
+    font-weight: bold;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.rank-informations form .row .column-2 button:hover {
+    background-color: var(--hover-main-color);
+}
+
+.other-infos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 618px) {
+    #rank-informations {
+        width: 400px !important;
+        height: 80vh !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #rank-informations form .row {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        width: 400px !important;
+        height: 100% !important;
+    }
+
+    .rank-informations form .row .column-1,
+    .rank-informations form .row .column-3 {
+        margin-block: 25px !important;
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+
+    }
+
+    #rank-informations,
+    #rank-informations form .row {
+        width: 360px !important;
+    }
+
+    .rank-informations h2,
+    .rank-informations p {
+        margin-inline: 12px;
+    }
+
+    .rank-informations p {
+        margin-block: 5px !important;
+    }
+
+    .rank-informations p:last-child {
+        margin-bottom: 15px !important;
+    }
+}
+
+@media (max-width: 399px) {
+    #rank-informations {
+        height: 88vh !important;
+    }
+}
+
+
+@media (max-width: 1254px) {
+    .rank-informations,
+    .rank-informations form .row {
+        width: 900px !important;
+    }
+}
+
+@media (max-width: 926px) {
+    .rank-informations,
+    .rank-informations form .row {
+        width: 700px !important;
+    }
+}
+
+@media (max-width: 726px) {
+    .rank-informations,
+    .rank-informations form .row {
+        width: 600px !important;
+    }
+}
