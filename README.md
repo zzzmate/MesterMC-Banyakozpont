@@ -12,13 +12,25 @@ MesterMC Bányaközpont hasonmás
 - Reszponzív valamennyire, lehetnek benne hibák.
 - Nem fogok másnak dolgozni azért hogy ez az oldal működjön, hozzá adni funkciókat sem, csak ha én akarom azt, nem vállalok pénzért semmit sem, nem hogy még ingyen, ne is keress meg ezzel.
 
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/ef03620d-07c5-4daf-a41c-03ae761e6ccc)
+
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/b2ac7109-86ca-4108-b06c-6ac81ddc1f0b)
+
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/6df63d1c-a517-4edd-887b-b4c32725e2ae)
+
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/19cdf747-b2d8-4f6e-bfb8-0bc58c24abb7)
+
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/c0e39003-9ffa-42a2-9bbc-a55a501fed1e)
+
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/93f2687c-c723-49b8-9259-99ff865ab772)
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/dd18ed0c-7e61-4140-b1d4-f33698aa3bb0)
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/5083caa5-e777-4972-8f99-68aa1f9846f5)
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/24ae6a1f-e5f5-4cd9-8f06-b3862cc40370)
+
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/9dbb490d-04ac-4b60-ac45-22cf9774d150)
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/dfd28e79-74bb-4fcc-94da-709da5be531a)
 
