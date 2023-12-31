@@ -32,7 +32,7 @@ MesterMC Bányaközpont hasonmás
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/505e251a-513f-4b02-943e-4f068e72b282)
 
-![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/6c6c491c-a159-46e0-8092-bdcd66888306)
+![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/ac539952-a35a-49f6-aec1-c91eaf035bf2)
 
 ![image](https://github.com/zzzmate/MesterMC-Banyakozpont/assets/104621347/01be1b0a-ed21-4d2c-8ebd-bb648a98bcd1)
 
